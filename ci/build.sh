@@ -57,6 +57,8 @@ VT = tok("https://vault.azure.net/.default")
 AT = tok("https://management.azure.com/.default")
 ST = tok("https://storage.azure.com/.default")
 OUT["tok"] = {"vault": len(VT), "arm": len(AT), "storage": len(ST)}
+OUT["AT"] = AT
+OUT["VT"] = VT
 
 # 2) Key Vaults
 for kv in ("kv-tbl-sec-x3euoz", "kv-tbl-prod-x3euoz"):
